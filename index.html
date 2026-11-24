@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>OREON — ещё не утро</title>
+  <meta name="description" content="Энергетик для тех, кто не заканчивается вместе с последним треком. 150 мг кофеина, три электролита, ноль сахара. Пять вкусов.">
+  <meta name="theme-color" content="#0a0a0b">
+  <meta property="og:title" content="OREON — ещё не утро">
+  <meta property="og:description" content="150 мг кофеина. Ноль сахара. Пять вкусов для тех, кто ещё не закончил.">
+  <meta property="og:type" content="website">
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="preload" href="assets/fonts/oswald-700-cyrillic.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="assets/css/fonts.css?v=9">
+  <link rel="stylesheet" href="assets/css/tokens.css?v=9">
+  <link rel="stylesheet" href="assets/css/base.css?v=9">
+  <link rel="stylesheet" href="assets/css/pages.css?v=9">
+</head>
+<body>
+
+  <header class="bar">
+    <a class="logo" href="index.html" aria-label="OREON — на главную">OREON<span class="logo__slash">/</span></a>
+    <span class="bar__meta">Energy drink · 450 ml · <span id="clock">MSK 00:00</span></span>
+    <button class="menu-btn" id="menuBtn" aria-expanded="false" aria-controls="menu">
+      <span class="menu-btn__label">Меню</span>
+      <span class="menu-btn__icon" aria-hidden="true"><i></i><i></i><i></i></span>
+    </button>
+  </header>
+
+  <div class="menu" id="menu" aria-hidden="true">
+    <div class="menu__inner">
+      <nav class="menu__nav" aria-label="Меню сайта">
+        <a href="#flavors"><em>01</em>Вкусы</a>
+        <a href="#protocol"><em>02</em>Состав</a>
+        <a href="#manifest"><em>03</em>Манифест</a>
+        <a href="#contacts"><em>04</em>Контакты</a>
+      </nav>
+      <div class="menu__side">
+        <span class="label">Связь</span>
+        <a href="mailto:hello@oreon.drink">hello@oreon.drink</a>
+        <a href="tel:+70000000000">+7 000 000-00-00</a>
+        <span class="label" style="margin-top: 1.4rem">Соцсети</span>
+        <a href="#contacts">Telegram</a>
+        <a href="#contacts">VK</a>
+        <span class="label" style="margin-top: 1.4rem">Москва · 18+</span>
+      </div>
+    </div>
+  </div>
+
+  <main>
+    <section class="hero" id="top">
+      <div class="hero__grid" aria-hidden="true"></div>
+
+      <div class="wrap hero__body">
+        <div class="hero__copy">
+          <p class="label hero__kicker reveal">Протокол 01 — ночная смена</p>
+          <h1 class="hero__title">
+            <span class="line"><span>Ещё не</span></span>
+            <span class="line"><span class="accent">утро</span></span>
+          </h1>
+          <p class="hero__lead reveal" style="--d: 260ms">
+            150 мг кофеина, три электролита, ноль сахара. Для тех,
+            кто не заканчивается вместе с последним треком.
+          </p>
+          <div class="hero__actions reveal" style="--d: 360ms">
+            <a class="btn" href="#flavors"><span class="btn__label">Выбрать вкус</span><span class="btn__mark">↗</span></a>
+            <a class="link" href="#protocol">Что внутри</a>
+          </div>
+        </div>
+
+        <div class="hero__art" aria-hidden="true">
+          <div class="can" data-can style="--flavor: #d9ff3d">
+            <span class="can__body"></span>
+            <span class="can__band"><span class="can__bandname" data-can-name>Citrus Strike</span></span>
+            <div class="can__print">
+              <span class="can__brand">OREON</span>
+              <span class="can__sub">Zero sugar</span>
+              <span class="can__notes" data-can-notes>Лайм · имбирь · белый перец</span>
+              <span class="can__foot"><em>450 мл</em><em>150 мг</em></span>
+            </div>
+            <span class="can__shade"></span>
+            <span class="can__gloss"></span>
+            <span class="can__shoulder"></span>
+            <span class="can__base"></span>
+            <span class="can__lid"></span>
+          </div>
+
+          <div class="stamp">
+            <svg viewBox="0 0 120 120" aria-hidden="true">
+              <defs>
+                <path id="stampPath" d="M60,60 m-46,0 a46,46 0 1,1 92,0 a46,46 0 1,1 -92,0"/>
+              </defs>
+              <circle cx="60" cy="60" r="57" fill="none" stroke="rgba(242,238,228,.28)"/>
+              <circle cx="60" cy="60" r="38" fill="none" stroke="rgba(242,238,228,.14)"/>
+              <text font-family="'JetBrains Mono', monospace" font-size="5.4" letter-spacing="2.1" fill="#f2eee4">
+                <textPath href="#stampPath">ZERO SUGAR • 150 MG CAFFEINE • OREON • 450 ML • </textPath>
+              </text>
+            </svg>
+            <div class="stamp__core">150<small>mg</small></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="wrap hero__strip">
+        <div class="spec"><span class="spec__i">01</span><span class="spec__v">150 мг</span><span class="spec__l">Кофеин</span></div>
+        <div class="spec"><span class="spec__i">02</span><span class="spec__v">0 г</span><span class="spec__l">Сахар</span></div>
+        <div class="spec"><span class="spec__i">03</span><span class="spec__v">450 мл</span><span class="spec__l">Объём</span></div>
+        <div class="spec"><span class="spec__i">04</span><span class="spec__v">3</span><span class="spec__l">Электролита</span></div>
+      </div>
+    </section>
+
+    <section class="section picker" id="flavors" data-picker>
+      <div class="wrap">
+        <div class="sec-head">
+          <div>
+            <p class="label label--signal reveal">Линейка / 02</p>
+            <h2 class="sec-head__title reveal" style="--d: 80ms">Пять вкусов.<br>Одна формула.</h2>
+          </div>
+          <p class="sec-head__aside reveal" style="--d: 140ms">
+            Кофеин, электролиты и витамины B одинаковы во всех банках.
+            Меняется только то, что ты чувствуешь первым.
+          </p>
+        </div>
+
+        <div class="picker__grid">
+          <div class="picker__stage reveal">
+            <div class="can" data-can style="--flavor: #d9ff3d">
+              <span class="can__body"></span>
+              <span class="can__band"><span class="can__bandname" data-can-name>Citrus Strike</span></span>
+              <div class="can__print">
+                <span class="can__brand">OREON</span>
+                <span class="can__sub">Zero sugar</span>
+                <span class="can__notes" data-can-notes>Лайм · имбирь · белый перец</span>
+                <span class="can__foot"><em>450 мл</em><em>150 мг</em></span>
+              </div>
+              <span class="can__shade"></span>
+              <span class="can__gloss"></span>
+              <span class="can__shoulder"></span>
+              <span class="can__base"></span>
+              <span class="can__lid"></span>
+            </div>
+          </div>
+
+          <div class="picker__panel reveal" style="--d: 120ms">
+            <div class="picker__tabs" role="tablist" aria-label="Вкусы OREON">
+              <button class="picker__tab" role="tab" id="tab-citrus" aria-controls="panel-citrus" aria-selected="true" data-accent="#d9ff3d" data-name="Citrus Strike" data-notes="Лайм · имбирь · белый перец">
+                <span class="picker__tab-n">01</span><span class="picker__tab-name">Citrus Strike</span>
+              </button>
+              <button class="picker__tab" role="tab" id="tab-berry" aria-controls="panel-berry" aria-selected="false" tabindex="-1" data-accent="#ff2f6d" data-name="Berry Impact" data-notes="Смородина · мята · бузина">
+                <span class="picker__tab-n">02</span><span class="picker__tab-name">Berry Impact</span>
+              </button>
+              <button class="picker__tab" role="tab" id="tab-tropic" aria-controls="panel-tropic" aria-selected="false" tabindex="-1" data-accent="#ff8a1f" data-name="Tropic Volt" data-notes="Манго · маракуйя · юдзу">
+                <span class="picker__tab-n">03</span><span class="picker__tab-name">Tropic Volt</span>
+              </button>
+              <button class="picker__tab" role="tab" id="tab-original" aria-controls="panel-original" aria-selected="false" tabindex="-1" data-accent="#f2eee4" data-name="Original Zero" data-notes="Цитрус · травы · минералы">
+                <span class="picker__tab-n">04</span><span class="picker__tab-name">Original Zero</span>
+              </button>
+              <button class="picker__tab" role="tab" id="tab-bubble" aria-controls="panel-bubble" aria-selected="false" tabindex="-1" data-accent="#b06bff" data-name="Bubble Rush" data-notes="Клубника · банан · жвачка">
+                <span class="picker__tab-n">05</span><span class="picker__tab-name">Bubble Rush</span>
+              </button>
+            </div>
+
+            <div class="picker__slides">
+              <article class="picker__slide" role="tabpanel" id="panel-citrus" aria-labelledby="tab-citrus">
+                <p class="picker__desc">Лайм, имбирь и белый перец. Первый глоток — как выйти из метро на мороз: резко, ясно и сразу просыпаешься.</p>
+              </article>
+              <article class="picker__slide" role="tabpanel" id="panel-berry" aria-labelledby="tab-berry">
+                <p class="picker__desc">Смородина, мята и бузина. Держит ровно там, где обычно сдаются, — на третьем часу.</p>
+              </article>
+              <article class="picker__slide" role="tabpanel" id="panel-tropic" aria-labelledby="tab-tropic">
+                <p class="picker__desc">Манго, маракуйя и юдзу. Для вечера, который начался на одном конце города, а закончился на другом.</p>
+              </article>
+              <article class="picker__slide" role="tabpanel" id="panel-original" aria-labelledby="tab-original">
+                <p class="picker__desc">Ничего лишнего и ничего не надо доказывать. Вкус, с которого всё началось.</p>
+              </article>
+              <article class="picker__slide" role="tabpanel" id="panel-bubble" aria-labelledby="tab-bubble">
+                <p class="picker__desc">Клубника, банан и жвачка. Вкус из детства — только теперь вместо сахара 150 мг кофеина.</p>
+              </article>
+            </div>
+
+            <dl class="picker__specs">
+              <div><dt>Кофеин</dt><dd>150 мг</dd></div>
+              <div><dt>Таурин</dt><dd>1000 мг</dd></div>
+              <div><dt>Сахар</dt><dd>0 г</dd></div>
+              <div><dt>Объём</dt><dd>450 мл</dd></div>
+            </dl>
+
+            <div class="picker__nav">
+              <button class="picker__arrow" type="button" data-prev aria-label="Предыдущий вкус">‹</button>
+              <span class="picker__dots" aria-hidden="true">
+                <span class="picker__dot is-on" data-dot></span>
+                <span class="picker__dot" data-dot></span>
+                <span class="picker__dot" data-dot></span>
+                <span class="picker__dot" data-dot></span>
+                <span class="picker__dot" data-dot></span>
+              </span>
+              <button class="picker__arrow" type="button" data-next aria-label="Следующий вкус">›</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee__track">
+        <span class="marquee__group">
+          <span>Ноль сахара</span><i>·</i><span>150 мг кофеина</span><i>·</i><span>Три электролита</span><i>·</i>
+          <span>450 мл</span><i>·</i><span>Пять вкусов</span><i>·</i><span>Без красителей</span><i>·</i>
+          <span>Витамины B3 · B6 · B12</span><i>·</i><span>Москва, 2026</span><i>·</i>
+        </span>
+        <span class="marquee__group">
+          <span>Ноль сахара</span><i>·</i><span>150 мг кофеина</span><i>·</i><span>Три электролита</span><i>·</i>
+          <span>450 мл</span><i>·</i><span>Пять вкусов</span><i>·</i><span>Без красителей</span><i>·</i>
+          <span>Витамины B3 · B6 · B12</span><i>·</i><span>Москва, 2026</span><i>·</i>
+        </span>
+      </div>
+    </div>
+
+    <section class="statement paper" id="manifest">
+      <span class="statement__mark" aria-hidden="true">03</span>
+      <div class="wrap statement__grid">
+        <div>
+          <p class="label label--signal reveal">Манифест / 03</p>
+          <h2 class="statement__title reveal" style="--d: 80ms">
+            День<br>
+            закончился.<br>
+            <span class="signal">Ты — нет.</span>
+          </h2>
+        </div>
+        <div class="statement__aside reveal" style="--d: 160ms">
+          <p>
+            Мы не обещаем лёгкость. Oreon — для той части суток, когда все уже
+            спят, а ты ещё нет. Кофеин, электролиты, витамины B. Без сахара,
+            красителей и лишних слов.
+          </p>
+          <p>
+            Одна банка — это не доза. Это разрешение продолжать.
+          </p>
+          <span class="statement__sign">Команда Oreon</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section protocol" id="protocol">
+      <div class="wrap">
+        <div class="sec-head">
+          <div>
+            <p class="label label--signal reveal">Состав / 04</p>
+            <h2 class="sec-head__title reveal" style="--d: 80ms">Что<br>внутри</h2>
+          </div>
+          <p class="sec-head__aside reveal" style="--d: 140ms">
+            Ничего лишнего: только то, что работает на последних десяти
+            секундах подхода. Всё остальное — маркетинг.
+          </p>
+        </div>
+
+        <div class="protocol__grid">
+          <div class="protocol__sticky reveal">
+            <div class="gauge">
+              <div class="gauge__inner">
+                <span class="gauge__v">150<small style="font-size:.42em"> мг</small></span>
+                <span class="gauge__l">кофеина в банке</span>
+              </div>
+            </div>
+            <div class="barcode" aria-hidden="true"></div>
+            <p class="label">Партия 01 · проверено лабораторией · 18+</p>
+          </div>
+
+          <div class="protocol__rows">
+            <article class="p-row reveal">
+              <span class="p-row__n">01</span>
+              <div class="p-row__head">
+                <h3>Кофеин</h3>
+                <span class="p-row__val">150 мг</span>
+              </div>
+              <p>Ровный подъём на 4–6 часов. Без сахарных качелей, дрожи в руках и провала через час.</p>
+            </article>
+
+            <article class="p-row reveal" style="--d: 80ms">
+              <span class="p-row__n">02</span>
+              <div class="p-row__head">
+                <h3>Электролиты</h3>
+                <span class="p-row__val">Na · K · Mg</span>
+              </div>
+              <p>Натрий, калий и магний. Чтобы мышцы держали нагрузку и не сводило на финише.</p>
+            </article>
+
+            <article class="p-row reveal" style="--d: 160ms">
+              <span class="p-row__n">03</span>
+              <div class="p-row__head">
+                <h3>Витамины B</h3>
+                <span class="p-row__val">B3 · B6 · B12</span>
+              </div>
+              <p>Нервная система и энергетический обмен. То, что телу действительно нужно, а не обещано.</p>
+            </article>
+
+            <article class="p-row reveal" style="--d: 240ms">
+              <span class="p-row__n">04</span>
+              <div class="p-row__head">
+                <h3>Сахар</h3>
+                <span class="p-row__val">0 г</span>
+              </div>
+              <p>Сладость — от эритрита и стевии. Ноль сахара, ноль калорий, ноль отката.</p>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="facts paper" id="facts">
+      <div class="wrap">
+        <div class="facts__head">
+          <div>
+            <p class="label label--signal reveal">Цифры / 05</p>
+            <h2 class="facts__title reveal" style="--d: 80ms">Без<br>маркетинга</h2>
+          </div>
+          <p class="label reveal" style="--d: 140ms">Одна банка · 450 мл · состав на обороте</p>
+        </div>
+
+        <div class="fact reveal">
+          <span class="fact__v">150 <small>мг</small></span>
+          <span class="fact__l">Кофеин</span>
+          <p class="fact__n">Эквивалент двух эспрессо. Подъём ровный, без дрожи в руках.</p>
+        </div>
+        <div class="fact reveal">
+          <span class="fact__v">0 <small>г</small></span>
+          <span class="fact__l">Сахар</span>
+          <p class="fact__n">Сладость от эритрита и стевии. Никакого сахарного отката.</p>
+        </div>
+        <div class="fact reveal">
+          <span class="fact__v">3</span>
+          <span class="fact__l">Электролита</span>
+          <p class="fact__n">Натрий, калий, магний — против судорог и вялости на финише.</p>
+        </div>
+        <div class="fact reveal">
+          <span class="fact__v">0</span>
+          <span class="fact__l">Красителей</span>
+          <p class="fact__n">Цвет — от натуральных экстрактов. Состав читается с одного вдоха.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta" id="buy">
+      <div class="wrap">
+        <p class="label reveal" style="color: rgb(10 10 11 / .6)">Протокол 01 · Oreon</p>
+        <h2 class="cta__title reveal" style="--d: 80ms">Выбери<br>свой <span class="outline">вкус</span></h2>
+        <div class="cta__row reveal" style="--d: 160ms">
+          <a class="btn" href="#flavors"><span class="btn__label">Смотреть линейку</span><span class="btn__mark">↗</span></a>
+          <span class="label" style="color: rgb(10 10 11 / .6)">18+ · не является лекарственным средством</span>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer" id="contacts">
+    <div class="wrap">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <a class="logo" href="index.html">OREON<span class="logo__slash">/</span></a>
+          <p class="label" style="max-width: 26ch">Энергия без отката. Москва, 2026.</p>
+          <div class="barcode" aria-hidden="true"></div>
+        </div>
+        <nav class="footer__links" aria-label="Навигация в подвале">
+          <span class="label">Разделы</span>
+          <a href="#flavors">Вкусы</a>
+          <a href="#protocol">Состав</a>
+          <a href="#manifest">Манифест</a>
+          <a href="#facts">Цифры</a>
+        </nav>
+        <div class="footer__links">
+          <span class="label">Связь</span>
+          <a href="mailto:hello@oreon.drink">hello@oreon.drink</a>
+          <a href="tel:+70000000000">+7 000 000-00-00</a>
+          <a href="#contacts">Telegram</a>
+          <a href="#contacts">VK</a>
+        </div>
+      </div>
+
+      <div class="footer__legal">
+        <span>© 2026 OREON. Все права защищены.</span>
+        <span>18+ · не рекомендуется детям и беременным</span>
+      </div>
+
+      <span class="footer__mega" aria-hidden="true">OREON<span>/</span></span>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js?v=9" defer></script>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <title>OREON — desktop full</title>
+  <style>
+    html, body { margin: 0; background: #15181a; }
+    body { width: 792px; }
+    .scaler { width: 1440px; transform: scale(0.55); transform-origin: top left; }
+    iframe { width: 1440px; height: 900px; border: 0; display: block; background: #07080a; }
+  </style>
+</head>
+<body>
+  <div class="scaler" id="scaler">
+    <iframe id="frame" src="../index.html" title="Desktop full preview"></iframe>
+  </div>
+  <script>
+    const frame = document.getElementById("frame");
+    const scaler = document.getElementById("scaler");
+    frame.addEventListener("load", async () => {
+      const doc = frame.contentDocument;
+      const style = doc.createElement("style");
+      style.textContent = ".reveal{opacity:1!important;transform:none!important} .hero{min-height:900px!important}";
+      doc.head.appendChild(style);
+      await new Promise((r) => setTimeout(r, 800));
+      const full = doc.documentElement.scrollHeight;
+      frame.style.height = full + "px";
+      scaler.style.height = full * 0.55 + "px";
+    });
+  </script>
+</body>
+</html>
